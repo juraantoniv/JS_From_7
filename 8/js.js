@@ -13,12 +13,34 @@ function Car(nameProd, year, maxSpeed, value) {
     this.maxSpeed = maxSpeed
     this.value = value
     this.drive = function () {
-        console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину'` );
-    };
+        console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину'` );
+    }
+    this.info = function (){
+        console.log(`nameProd: ${this.nameProd} year: ${this.year} maxSpeed: ${this.maxSpeed} value${this.value} ` )
+
+    }
 }
 
 let driver1 = new Car ('fsdfsds',2005,190,2999)
-
 console.log(driver1);
+driver1.drive()
+driver1.info()
 
 
+
+
+
+
+//
+// function User(name, age, status, wifeName, wifeAge) {
+//     this.name = name;
+//     this.age = age;
+//     this.status = status;
+//     this.wife = {name: wifeName, age: wifeAge}
+//     this.greeting = function () {
+//         console.log('hi');
+//     };
+// }
+//
+// let user = new User('asd', 123, true, 'anna', 28);
+// console.log(user);
