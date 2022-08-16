@@ -29,10 +29,10 @@
 //         this.year=newYear
 //         console.log(`Рік змінено на ${this.year}`);
 //
-//      this.addDriver = function(owner) {
-//          Car.apply()
-//     }
-// }
+     this.addDriver = function(owner) {
+         this.owner=owner
+    }
+}
 //
 //
 //
@@ -144,11 +144,10 @@ class Car {
         console.log(`Рік змінено на ${this.year}`);
 
     }
-    // this.addDriver = function (newDriver){
-    // }
-    //  this.addDriver = function(owner) {
-    //      this.['newDr']=owner
-    // }
+
+     function5(owner) {
+         this.owner=owner
+    }
 }
 let driver5 = new Car ('fsdfsds',2008,190,2999)
 
@@ -156,7 +155,59 @@ driver5.function1()
 driver5.function4(2010)
 driver5.function2()
 driver5.function3(150)
+driver5.function5('new')
+console.log(driver5);
 
 
+// -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
+// Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+//     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+//     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
+//
+//
+// class  Pop{
+//     constructor(name, age , sizeOfFoot) {
+//         this.name = name;
+//         this.age = age;
+//         this.sizeOfFoot= sizeOfFoot;
+//     }
+// }
+//
+// class Prinz extends Pop{
+//     constructor(name,age,sizeOfFoot) {
+//         super();
+//         this.sizeOfFoot= sizeOfFoot
+//
+//     }
+// }
+//
+// let p1 = new Pop('Alina',25,35)
+// let p2 = new Pop('Ala',20,38)
+// let p3 = new Pop('Ira',28,39)
+// let p4 = new Pop('Sara',21,37)
+// let p5 = new Pop('Alina',25,36)
+// let p6 = new Pop('July',21,36)
+// let p7 = new Pop('Mari4ka',25,36)
+// let pr = new Prinz('Vova',30,35)
+//
+//
+//
+//  let all =[p1,p2,p3,p4,p5,p6,p7,pr]
 
+//     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+
+// console.log(all);
+//
+// for (const pop of all) {
+//     if (pop.sizeOfFoot===pr.sizeOfFoot){
+//         console.log(pop)
+//         break
+//     }
+//
+// }
+
+//     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+
+// let find = all.find(value => value.sizeOfFoot===pr.sizeOfFoot)
+// console.log(find);
