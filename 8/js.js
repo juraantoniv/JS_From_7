@@ -28,15 +28,15 @@
 //     this.changeYear = function (newYear) {
 //         this.year = newYear
 //         console.log(`Рік змінено на ${this.year}`);
-//
+// }
 //         this.addDriver = function (...owner) {
 //             this.owner = owner
 //         }
-//     }
+//
 // }
 //
 // let driver1 = new Car ('fsdfsds',2008,190,2999)
-//
+
 // console.log(driver1);
 // driver1.drive()
 // driver1.info()
