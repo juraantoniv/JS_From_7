@@ -100,11 +100,21 @@ class Client {
     }
 }
 
-let client1 = Client(25,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'jhjhggh,fsfsdf,sfsfs',fsfsdfsd,55555,hffgf')
-let client2 = Client(20,'Andrii','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsfs,fsfsdfsd')
-let client3 = Client(15,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd,2525252')
-let client4 = Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd')
-let client5 = Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd')
-let client6 = Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd')
-let client7 = Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd')
-let client8 = Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd')
+let client1 = new Client(25,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'jhjhggh,fsfsdf,sfsfs,fsfsdfsd,55555,hffgf')
+let client2 = new Client(20,'Andrii','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsfs,fsfsdfsd')
+let client3 = new Client(15,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd,2525252')
+let client4 = new Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd')
+let client5 = new Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf')
+let client6 = new Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd,454545')
+let client7 = new Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd')
+let client8 = new Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs')
+let client9 = new Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd')
+let client10 = new Client(10,'Vasya','Pupkin', 'dsgss@gmail.com', +380977863872, 'dgsdgs,fsfsdf,fsfsdfsd,54545,45454,1,454555556')
+
+
+let clients =[client1,client2,client3,client4,client5,client6,client7,client8,client9,client10]
+
+//- Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+
+console.log(clients.sort((a, b) => a.order.toString().length -b.order.toString().length));
+
