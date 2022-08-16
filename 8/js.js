@@ -19,15 +19,47 @@ function Car(nameProd, year, maxSpeed, value) {
         console.log(`nameProd: ${this.nameProd} year: ${this.year} maxSpeed: ${this.maxSpeed} value${this.value} ` )
 
     }
+    this.incMax=function (newSped){
+            this.maxSpeed+=newSped
+            console.log(`Нова максималка = ${this.maxSpeed}`);
+
+        }
+
+    this.changeYear= function (newYear){
+        this.year=newYear
+        console.log(`Рік змінено на ${this.year}`);
+
+    }
+
 }
 
-let driver1 = new Car ('fsdfsds',2005,190,2999)
+
+
+
+
+
+
+let driver1 = new Car ('fsdfsds',2008,190,2999)
 console.log(driver1);
 driver1.drive()
 driver1.info()
+driver1.incMax(100)
+driver1.changeYear(2005)
+console.log(driver1);
 
 
-
+//
+// class Customer extends Car {
+//     constructor(nameProd, year, maxSpeed, value,newSped) {
+//         super(nameProd, year, maxSpeed, value);
+//         this.newSped = newSped;
+//         // this.increeMax=function (newSped){
+//         //     maxSpeed+=newSped
+//         //     console.log(`${maxSpeed}`);
+//         //
+//         // }
+//     }
+// }
 
 
 
