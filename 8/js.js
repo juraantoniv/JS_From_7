@@ -13,43 +13,39 @@
 //     this.maxSpeed = maxSpeed
 //     this.value = value
 //     this.drive = function () {
-//         console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину'` );
+//         console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину'`);
 //     }
-//     this.info = function (){
-//         console.log(`nameProd: ${this.nameProd} year: ${this.year} maxSpeed: ${this.maxSpeed} value${this.value} ` )
+//     this.info = function () {
+//         console.log(`nameProd: ${this.nameProd} year: ${this.year} maxSpeed: ${this.maxSpeed} value${this.value} `)
 //
 //     }
-//     this.incMax=function (newSped){
-//             this.maxSpeed+=newSped
-//             console.log(`Нова максималка = ${this.maxSpeed}`);
+//     this.incMax = function (newSped) {
+//         this.maxSpeed += newSped
+//         console.log(`Нова максималка = ${this.maxSpeed}`);
 //
-//         }
+//     }
 //
-//     this.changeYear= function (newYear){
-//         this.year=newYear
+//     this.changeYear = function (newYear) {
+//         this.year = newYear
 //         console.log(`Рік змінено на ${this.year}`);
 //
-     this.addDriver = function(owner) {
-         this.owner=owner
-    }
-}
-//
-//
-//
-//
-//
-//
+//         this.addDriver = function (...owner) {
+//             this.owner = owner
+//         }
+//     }
+// }
 //
 // let driver1 = new Car ('fsdfsds',2008,190,2999)
+//
 // console.log(driver1);
 // driver1.drive()
 // driver1.info()
 // driver1.incMax(100)
 // driver1.changeYear(2005)
-// driver1.addDriver('New driver')
+// driver1.addDriver('newDriver')
 // console.log(driver1)
 
-
+//----------------------------------------------
 
 // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
@@ -115,48 +111,61 @@
 
 // console.log(clients.sort((a, b) => a.order.toString().length -b.order.toString().length));
 
+//----------------------------------------------
+
 //- (Те саме, тільки через клас)
 
-class Car {
-    constructor(nameProd, year, maxSpeed, value){
-        this.nameProd = nameProd
-    this.year = year
-    this.maxSpeed = maxSpeed
-    this.value = value
+// -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
+// -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
+// -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+// -- changeYear (newValue) - змінює рік випуску на значення newValue
+// -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 
-    }
 
-    function1 () {
-        console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину'` );
-    }
-    function2 (){
-        console.log(`nameProd: ${this.nameProd} year: ${this.year} maxSpeed: ${this.maxSpeed} value${this.value} ` )
+//
+// class Car {
+//     constructor(nameProd, year, maxSpeed, value){
+//         this.nameProd = nameProd
+//     this.year = year
+//     this.maxSpeed = maxSpeed
+//     this.value = value
+//
+//     }
+//
+//     function1 () {
+//         console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину'` );
+//     }
+//     function2 (){
+//         console.log(`nameProd: ${this.nameProd} year: ${this.year} maxSpeed: ${this.maxSpeed} value${this.value} ` )
+//
+//     }
+//    function3 (newSped){
+//         this.maxSpeed+=newSped
+//         console.log(`Нова максималка = ${this.maxSpeed}`);
+//
+//     }
+//
+//      function4 (newYear){
+//         this.year=newYear
+//         console.log(`Рік змінено на ${this.year}`);
+//
+//     }
+//
+//      function5(owner) {
+//          this.owner=owner
+//     }
+// }
+// let driver5 = new Car ('fsdfsds',2008,190,2999)
+//
+// driver5.function1()
+// driver5.function4(2010)
+// driver5.function2()
+// driver5.function3(150)
+// driver5.function5('new')
+// console.log(driver5);
 
-    }
-   function3 (newSped){
-        this.maxSpeed+=newSped
-        console.log(`Нова максималка = ${this.maxSpeed}`);
 
-    }
-
-     function4 (newYear){
-        this.year=newYear
-        console.log(`Рік змінено на ${this.year}`);
-
-    }
-
-     function5(owner) {
-         this.owner=owner
-    }
-}
-let driver5 = new Car ('fsdfsds',2008,190,2999)
-
-driver5.function1()
-driver5.function4(2010)
-driver5.function2()
-driver5.function3(150)
-driver5.function5('new')
-console.log(driver5);
+//----------------------------------------------
 
 
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
