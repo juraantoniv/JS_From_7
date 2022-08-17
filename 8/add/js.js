@@ -93,20 +93,33 @@ class User {
         if (id === this.key) {
             this.transactionLimit += amount
             return this.transactionLimit
+
+
+        }
+    }
+
+    transferCredits(amount, id) {
+        this.balance -= amount
+        for (const amountElement of users) {
+            if(id===amountElement.key) {
+               return  this.balance+=amount
+
+        }
+
         }
 
 
     }
-
 }
+
+
+
 
 
 let user = new User(100,500,'jhjkhkhkh',2)
 let user1 = new User(100,500,'jhjkhkhkh',3)
 let user2 = new User(100,500,'jhjkhkhkh',4)
-// user.putCredits(300,2)
-// console.log(user);
-// .log(user);
+
 
 let users = [user,user1,user2]
 
@@ -114,3 +127,5 @@ let users = [user,user1,user2]
 // console.log(users)
 // user2.putCredits(8000,4)
 // console.log(users)
+user1.transferCredits(75,4)
+console.log(users);
