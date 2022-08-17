@@ -58,7 +58,7 @@ let arrAll1 = new User('Sacha','saaaaa','fdfd@gmail.com',
 console.log(arrAll)
 console.log(arrAll1)
 
-//--------------------------------------------------
+//--------------------------------------------------2 незнаю як користуватись http://htmlbook.ru/)
 
 document.write(`<div class="box">`)
 
