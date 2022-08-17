@@ -54,6 +54,9 @@
 //
 // document.write(`</div>`)
 
+
+
+
 class User {
     constructor(balance, transactionLimit, historyLogs, key, operationType, credits, operationTime) {
         this.key = key
@@ -94,7 +97,9 @@ class User {
 
 
     }
+
 }
+
 
 let user = new User(100,500,'jhjkhkhkh',2)
 let user1 = new User(100,500,'jhjkhkhkh',3)
@@ -105,5 +110,7 @@ let user2 = new User(100,500,'jhjkhkhkh',4)
 
 let users = [user,user1,user2]
 
-user.setTransactionLimit(800,2)
-console.log(users)
+// user.setTransactionLimit(800,2)
+// console.log(users)
+// user2.putCredits(8000,4)
+// console.log(users)
