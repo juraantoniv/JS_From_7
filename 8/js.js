@@ -36,7 +36,7 @@
 // }
 //
 // let driver1 = new Car ('fsdfsds',2008,190,2999)
-
+//
 // console.log(driver1);
 // driver1.drive()
 // driver1.info()
@@ -109,7 +109,7 @@
 
 //- Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 
-// console.log(clients.sort((a, b) => a.order.toString().length -b.order.toString().length));
+// console.log(clients.sort((a, b) => a.order.toString().length -b.order.toString().length);
 
 //----------------------------------------------
 
