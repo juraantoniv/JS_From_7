@@ -73,7 +73,7 @@ class User {
 
 
     putCredits(money, id) {
-        if (id === this.key) {
+        if (id === this.key && money>0) {
             this.balance += money
             return this.balance
         }
@@ -92,11 +92,14 @@ class User {
     }
 
     setTransactionLimit(amount, id) {
-        if (id === this.key) {
+        if (id === this.key && amount>0) {
             this.transactionLimit += amount
             return this.transactionLimit
 
 
+        }
+        else {
+            console.log("Error you want to apply limit 0 or less")
         }
     }
 
