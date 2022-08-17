@@ -1,44 +1,44 @@
-
-class User{
-    constructor ( name,  username, email,street,suite,city,zipcode,lat,lng) {
-        this.name =name
-        this.username = username
-        this.email=email
-        this.adres ={
-            street: street,
-            suite: suite,
-            city: city,
-            zipcode: zipcode,
-            geo: {
-                lat: lat,
-                lng: lng
-            }
-        }
-    }
-
-}
-
-class Phone {
-    constructor(phone,  website,name,catchPhrase,bs) {
-        this.phone = phone
-        this.website = website
-        this.company ={
-            name: name,
-            catchPhrase:catchPhrase,
-            bs:bs
-        }
-    }
-}
-
-
-let user = new User('Sacha','saaaaa','fdfd@gmail.com','gdgdgdg','dgdgdgdgd','dgdgdgdg','dgdgdgdgd','22,1222','22,55888')
-let pho = new Phone(78952566,'www.empty.com','fgdfgdg','sfsdfsfsf','fsfsdfsfsfsd')
-
-
-
-let all= [ user,pho]
-console.log(all)
-
+//
+// class User{
+//     constructor ( name,  username, email,street,suite,city,zipcode,lat,lng) {
+//         this.name =name
+//         this.username = username
+//         this.email=email
+//         this.adres ={
+//             street: street,
+//             suite: suite,
+//             city: city,
+//             zipcode: zipcode,
+//             geo: {
+//                 lat: lat,
+//                 lng: lng
+//             }
+//         }
+//     }
+//
+// }
+//
+// class Phone {
+//     constructor(phone,  website,name,catchPhrase,bs) {
+//         this.phone = phone
+//         this.website = website
+//         this.company ={
+//             name: name,
+//             catchPhrase:catchPhrase,
+//             bs:bs
+//         }
+//     }
+// }
+//
+//
+// let user = new User('Sacha','saaaaa','fdfd@gmail.com','gdgdgdg','dgdgdgdgd','dgdgdgdg','dgdgdgdgd','22,1222','22,55888')
+// let pho = new Phone(78952566,'www.empty.com','fgdfgdg','sfsdfsfsf','fsfsdfsfsfsd')
+//
+//
+//
+// let all= [ user,pho]
+// console.log(all)
+//
 
 
 
@@ -53,3 +53,57 @@ console.log(all)
 // document.write(`<div class="text" >GPS:  ${geO.lat} | ${geO.lng}</div>`)
 //
 // document.write(`</div>`)
+
+class Phone {
+    constructor(balance, transactionLimit, historyLogs, key,operationType) {
+        this.key = key
+        this.balance = balance
+        this.transactionLimit = transactionLimit
+        this.historyLogs ={
+            operationType:operationType,
+            credits:
+        }
+    }
+
+    putCredits(money, id) {
+            if (id === this.key) {
+                this.balance += money
+                return this.balance
+            }
+
+        }
+    takeCredits(money, id) {
+        if (id === this.key && this.balance>0 ) {
+            this.balance -= money
+            if(this.balance<0){
+                console.log('balance is negative.Please add some money to your balance')
+            }
+            return this.balance
+        }
+
+    }
+    setTransactionLimit(amount,id){
+        if (id === this.key) {
+            this.balance += money
+            return this.balance
+    }
+
+
+
+}
+
+let user = new Phone(100,500,'jhjkhkhkh',2)
+let user1 = new Phone(100,500,'jhjkhkhkh',3)
+let user2 = new Phone(100,500,'jhjkhkhkh',4)
+// user.putCredits(300,2)
+// console.log(user);
+ user.putCredits(300,2)
+// console.log(user);
+
+let users= [user,user1,user2]
+console.log(users)
+
+user.takeCredits(150,2)
+console.log(users)
+user.takeCredits(300,2)
+console.log(users)

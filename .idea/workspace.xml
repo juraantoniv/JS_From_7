@@ -88,7 +88,7 @@
       <workItem from="1660667415539" duration="14514000" />
       <workItem from="1660712338786" duration="3462000" />
       <workItem from="1660719182009" duration="19266000" />
-      <workItem from="1660757974047" duration="3512000" />
+      <workItem from="1660757974047" duration="8426000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1660672723587</created>
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660748479737</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="ok">
+      <created>1660762371919</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1660762371919</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,13 +249,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/8/add/js.js</url>
-          <line>42</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/8/add/js.js</url>
-          <line>105</line>
+          <line>33</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
