@@ -98,17 +98,21 @@ class User {
         }
     }
 
-    transferCredits(amount, id) {
-        this.balance -= amount
-        for (const amountElement of users) {
-            if(id===amountElement.key) {
-               return  this.balance+=amount
+    transferCredits(amount,from_id,to_id) {
+        if (this.balance<=0 || this.balance<amount) {
+            this.balance -= amount * 1.05
+            for (const amountElement of users) {
+                if (to_id === amountElement.key) {
+                    amountElement.balance += amount
+                    break
+                }
+
+            }
 
         }
-
+        else {
+            console.log('balance is to small that transfer money')
         }
-
-
     }
 }
 
@@ -127,5 +131,8 @@ let users = [user,user1,user2]
 // console.log(users)
 // user2.putCredits(8000,4)
 // console.log(users)
-user1.transferCredits(75,4)
+user1.transferCredits(75,2,4)
 console.log(users);
+user1.transferCredits(15,2,4)
+console.log(users);
+user1.transferCredits(15,2,4)
