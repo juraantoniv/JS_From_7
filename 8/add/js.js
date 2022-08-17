@@ -54,56 +54,56 @@
 //
 // document.write(`</div>`)
 
-class Phone {
-    constructor(balance, transactionLimit, historyLogs, key,operationType) {
+class User {
+    constructor(balance, transactionLimit, historyLogs, key, operationType, credits, operationTime) {
         this.key = key
         this.balance = balance
         this.transactionLimit = transactionLimit
-        this.historyLogs ={
-            operationType:operationType,
-            credits:
+        this.historyLogs = {
+            operationType: operationType,
+            credits: credits,
+            operationTime: operationTime
         }
     }
 
-    putCredits(money, id) {
-            if (id === this.key) {
-                this.balance += money
-                return this.balance
-            }
 
+    putCredits(money, id) {
+        if (id === this.key) {
+            this.balance += money
+            return this.balance
         }
+
+    }
+
     takeCredits(money, id) {
-        if (id === this.key && this.balance>0 ) {
+        if (id === this.key && this.balance > 0) {
             this.balance -= money
-            if(this.balance<0){
+            if (this.balance < 0) {
                 console.log('balance is negative.Please add some money to your balance')
             }
             return this.balance
         }
 
     }
-    setTransactionLimit(amount,id){
+
+    setTransactionLimit(amount, id) {
         if (id === this.key) {
-            this.balance += money
-            return this.balance
+            this.transactionLimit += amount
+            return this.transactionLimit
+        }
+
+
     }
-
-
-
 }
 
-let user = new Phone(100,500,'jhjkhkhkh',2)
-let user1 = new Phone(100,500,'jhjkhkhkh',3)
-let user2 = new Phone(100,500,'jhjkhkhkh',4)
+let user = new User(100,500,'jhjkhkhkh',2)
+let user1 = new User(100,500,'jhjkhkhkh',3)
+let user2 = new User(100,500,'jhjkhkhkh',4)
 // user.putCredits(300,2)
 // console.log(user);
- user.putCredits(300,2)
-// console.log(user);
+// .log(user);
 
-let users= [user,user1,user2]
-console.log(users)
+let users = [user,user1,user2]
 
-user.takeCredits(150,2)
-console.log(users)
-user.takeCredits(300,2)
+user.setTransactionLimit(800,2)
 console.log(users)
