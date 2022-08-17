@@ -99,7 +99,7 @@ class User {
     }
 
     transferCredits(amount,from_id,to_id) {
-        if (this.balance<=0 || this.balance<amount) {
+        if (this.balance<=0 || this.balance<amount && amount<this.transactionLimit) {
             this.balance -= amount * 1.05
             for (const amountElement of users) {
                 if (to_id === amountElement.key) {
@@ -111,7 +111,7 @@ class User {
 
         }
         else {
-            console.log('balance is to small that transfer money')
+            console.log('balance is to small that transfer money or limit is to small for this transaction')
         }
     }
 }
