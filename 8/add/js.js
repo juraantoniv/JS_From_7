@@ -56,6 +56,8 @@
 
 
 
+//----------------------------------------
+
 
 class User {
     constructor(balance, transactionLimit, historyLogs, key, operationType, credits, operationTime) {
@@ -98,11 +100,11 @@ class User {
         }
     }
 
-    transferCredits(amount,from_id,to_id) {
-        if (this.balance<=0 || this.balance<amount && amount<this.transactionLimit) {
+    transferCredits(amount,to_id) {
+        if (this.balance<=0 && this.balance<amount && amount<this.transactionLimit) {
             this.balance -= amount * 1.05
             for (const amountElement of users) {
-                if (to_id === amountElement) {
+                if (to_id === amountElement.key) {
                     amountElement.balance += amount
                     break
                 }
@@ -120,10 +122,23 @@ class User {
 
 
 
-let user = new User(100,500,'jhjkhkhkh',222)
-let user1 = new User(100,500,'jhjkhkhkh',335)
-let user2 = new User(100,500,'jhjkhkhkh',456)
+let user = new User(100,500,'jhjkhkhkh',1)
+let user1 = new User(100,500,'jhjkhkhkh',2)
+let user2 = new User(100,500,'jhjkhkhkh',3)
 
 
 let users = [user,user1,user2]
 
+user.putCredits(500,1)
+// console.log(users)
+user.takeCredits(100,1)
+// console.log(user)
+user.transferCredits(100,1,3)
+// console.log(users);
+user.transferCredits(100,3)
+console.log(users);
+user.transferCredits(100,3)
+console.log(users);
+user.transferCredits(100,3)
+console.log(users);
+user.transferCredits(600,3)
