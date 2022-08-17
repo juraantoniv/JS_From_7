@@ -127,12 +127,3 @@ let user2 = new User(100,500,'jhjkhkhkh',4)
 
 let users = [user,user1,user2]
 
-// user.setTransactionLimit(800,2)
-// console.log(users)
-// user2.putCredits(8000,4)
-// console.log(users)
-user1.transferCredits(75,2,4)
-console.log(users);
-user1.transferCredits(15,2,4)
-console.log(users);
-user1.transferCredits(15,2,4)
