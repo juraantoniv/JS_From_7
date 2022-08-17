@@ -111,7 +111,7 @@ class User {
 
         }
         else {
-            console.log('balance is to small that transfer money or limit is to small for this transaction')
+            console.log('Balance is to small that to transfer money or limit is to small for this transaction')
         }
     }
 }
