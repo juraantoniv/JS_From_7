@@ -57,3 +57,15 @@ let arrAll1 = new User('Sacha','saaaaa','fdfd@gmail.com',
 
 console.log(arrAll)
 console.log(arrAll1)
+
+//--------------------------------------------------
+
+document.write(`<div class="box">`)
+
+document.write(`<h4 class="text">${user.name}</h4>`)
+document.write(`<p class="text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>`)
+document.write(`<div class="text" >Phone : ${pho.phone} | ${pho.website}</div>`)
+document.write(`<div class="text" >Phone : ${adr.city} | ${adr.zipcode}</div>`)
+document.write(`<div class="text" > ${geO.lat} | ${geO.lng}</div>`)
+
+document.write(`</div>`)

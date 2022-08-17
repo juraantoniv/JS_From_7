@@ -1,0 +1,22 @@
+.box{
+    width: 400px;
+    background: blueviolet;
+    border: 1px solid black;
+    border-radius: 10px;
+    display:block;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    gap: 20px;
+}
+
+.text{
+    font-size: 20px;
+}
+
+.box1{
+
+    border-top: 1px solid black;
+    background: black;
+}
