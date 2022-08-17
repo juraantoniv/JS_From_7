@@ -102,7 +102,7 @@ class User {
         if (this.balance<=0 || this.balance<amount && amount<this.transactionLimit) {
             this.balance -= amount * 1.05
             for (const amountElement of users) {
-                if (to_id === amountElement.key) {
+                if (to_id === amountElement) {
                     amountElement.balance += amount
                     break
                 }
@@ -120,9 +120,9 @@ class User {
 
 
 
-let user = new User(100,500,'jhjkhkhkh',2)
-let user1 = new User(100,500,'jhjkhkhkh',3)
-let user2 = new User(100,500,'jhjkhkhkh',4)
+let user = new User(100,500,'jhjkhkhkh',222)
+let user1 = new User(100,500,'jhjkhkhkh',335)
+let user2 = new User(100,500,'jhjkhkhkh',456)
 
 
 let users = [user,user1,user2]
