@@ -47,9 +47,9 @@ let pho = new Phone(78952566,'www.empty.com')
 let company = new  Company('Romaguera-Crona','Multi-layered client-server neural-ne', 'harness real-time e-markets')
 
 
-let arrAll =[user,{adr,geO},pho,company]
+let arrAll = [user,{adr,geO},pho,company]
 
-let arrAll1 =new User('Sacha','saaaaa','fdfd@gmail.com',
+let arrAll1 = new User('Sacha','saaaaa','fdfd@gmail.com',
     new Address('nnnnn', 'fsfsfs str','Lviv','79000',
         new Geo('55,66666','22,65584'),
         new Phone(78952566,'www.empty.com',
