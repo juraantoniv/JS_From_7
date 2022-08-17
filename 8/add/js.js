@@ -56,3 +56,4 @@ let arrAll1 =new User('Sacha','saaaaa','fdfd@gmail.com',
             new  Company('Romaguera-Crona','Multi-layered client-server neural-ne', 'harness real-time e-markets'))))
 
 console.log(arrAll)
+console.log(arrAll1)
