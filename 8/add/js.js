@@ -83,6 +83,7 @@ class User {
 
     takeCredits(money, id) {
         if (typeof money==="number" && id === this.key && this.balance > 0) {
+            this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
             this.balance -= money
             if (this.balance < 0) {
                 console.log('balance is negative.Please add some money to your balance')
@@ -95,6 +96,7 @@ class User {
     setTransactionLimit(amount, id) {
         if (typeof amount==="number" && id === this.key && amount>0) {
             this.transactionLimit += amount
+            this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
             return this.transactionLimit
 
 
@@ -107,9 +109,11 @@ class User {
     transferCredits(amount,to_id) {
         if (typeof amount==="number" && this.balance<=0 && this.balance<amount && amount<this.transactionLimit) {
             this.balance -= amount * 1.05
+            this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
             for (const amountElement of users) {
                 if (to_id === amountElement.key) {
                     amountElement.balance += amount
+                    amountElement.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
                     break
                 }
 
@@ -148,5 +152,13 @@ user.transferCredits(100,1,3)
 // user.transferCredits(600,3)
 
 user.putCredits(500,1)
+// console.log(users);
+// user.putCredits(500,1)
+// user.transferCredits(150,3)
+// console.log(users);
+// user.transferCredits(150,3)
+// console.log(users);
+// user.takeCredits(150,1)
+// console.log(user);
+user.transferCredits(150,2)
 console.log(users);
-user.putCredits(500,1)
