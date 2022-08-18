@@ -73,7 +73,7 @@ class User {
 
 
     putCredits(money, id) {
-        if (id === this.key && money>0) {
+        if (typeof money==="number" && id === this.key && money>0) {
             this.balance += money
             return this.balance
         }
@@ -81,7 +81,7 @@ class User {
     }
 
     takeCredits(money, id) {
-        if (id === this.key && this.balance > 0) {
+        if (typeof money==="number" && id === this.key && this.balance > 0) {
             this.balance -= money
             if (this.balance < 0) {
                 console.log('balance is negative.Please add some money to your balance')
@@ -92,7 +92,7 @@ class User {
     }
 
     setTransactionLimit(amount, id) {
-        if (id === this.key && amount>0) {
+        if (typeof amount==="number" && id === this.key && amount>0) {
             this.transactionLimit += amount
             return this.transactionLimit
 
@@ -104,7 +104,7 @@ class User {
     }
 
     transferCredits(amount,to_id) {
-        if (this.balance<=0 && this.balance<amount && amount<this.transactionLimit) {
+        if (typeof amount==="number" && this.balance<=0 && this.balance<amount && amount<this.transactionLimit) {
             this.balance -= amount * 1.05
             for (const amountElement of users) {
                 if (to_id === amountElement.key) {
