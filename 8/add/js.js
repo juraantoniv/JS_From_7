@@ -107,7 +107,7 @@ class User {
     }
 
     transferCredits(amount,to_id) {
-        if (typeof amount==="number" && this.balance<=0 && this.balance<amount && amount<this.transactionLimit) {
+        if (typeof amount==="number" && this.balance>0 && amount<this.transactionLimit) {
             this.balance -= amount * 1.05
             this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
             for (const amountElement of users) {
@@ -160,5 +160,9 @@ user.putCredits(500,1)
 // console.log(users);
 // user.takeCredits(150,1)
 // console.log(user);
+user.transferCredits(150,2)
+// console.log(users);
+user.transferCredits(150,2)
+// console.log(users);
 user.transferCredits(150,2)
 console.log(users);
