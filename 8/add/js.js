@@ -1,29 +1,29 @@
 //
-class User {
-    constructor(name, username, email, street, suite, city, zipcode, lat, lng, phone, website, name2, catchPhrase, bs) {
-        this.name = name
-        this.username = username
-        this.email = email
-        this.adres = {
-            street: street,
-            suite: suite,
-            city: city,
-            zipcode: zipcode,
-            geo: {
-                lat: lat,
-                lng: lng
-            }
-        }
-        this.phone = phone
-        this.website = website
-        this.company = {
-            name: name2,
-            catchPhrase: catchPhrase,
-            bs: bs
-        }
-
-    }
-}
+// class User {
+//     constructor(name, username, email, street, suite, city, zipcode, lat, lng, phone, website, name2, catchPhrase, bs) {
+//         this.name = name
+//         this.username = username
+//         this.email = email
+//         this.adres = {
+//             street: street,
+//             suite: suite,
+//             city: city,
+//             zipcode: zipcode,
+//             geo: {
+//                 lat: lat,
+//                 lng: lng
+//             }
+//         }
+//         this.phone = phone
+//         this.website = website
+//         this.company = {
+//             name: name2,
+//             catchPhrase: catchPhrase,
+//             bs: bs
+//         }
+//
+//     }
+// }
 // class Phone {
 //     constructor(phone,  website,name,catchPhrase,bs) {
 //         this.phone = phone
@@ -37,14 +37,14 @@ class User {
 // }
 
 
-let user = new User('Sacha','saaaaa','fdfd@gmail.com',
-    'gdgdgdg','dgdgdgdgd','dgdgdgdg','dgdgdgdgd','22,1222',
-    '22,55888','882444','sgsgsg@gmail.com','STF','sdgsgsdgsg','sfsdfdfsdf')
-
-
-
-
-console.log(user)
+// let user = new User('Sacha','saaaaa','fdfd@gmail.com',
+//     'gdgdgdg','dgdgdgdgd','dgdgdgdg','dgdgdgdgd','22,1222',
+//     '22,55888','882444','sgsgsg@gmail.com','STF','sdgsgsdgsg','sfsdfdfsdf')
+//
+//
+//
+//
+// console.log(user)
 
 
 
