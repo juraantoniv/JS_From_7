@@ -98,7 +98,7 @@ class User {
     }
 
     setTransactionLimit(amount, id) {
-        if (typeof amount==="number" && id === this.key && amount1!==0) {
+        if (typeof amount==="number" && id === this.key && amount!==0) {
             this.transactionLimit += amount
             this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
             this.historyLogs.credits =amount
