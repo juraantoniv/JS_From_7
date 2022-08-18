@@ -75,6 +75,7 @@ class User {
     putCredits(money, id) {
         if (typeof money==="number" && id === this.key && money>0) {
             this.balance += money
+            this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
             return this.balance
         }
 
@@ -132,16 +133,20 @@ let user2 = new User(100,500,'jhjkhkhkh',3)
 
 let users = [user,user1,user2]
 
-user.putCredits(500,1)
+// user.putCredits(500,1)
 // console.log(users)
 user.takeCredits(100,1)
 // console.log(user)
 user.transferCredits(100,1,3)
 // console.log(users);
-user.transferCredits(100,3)
+// user.transferCredits(100,3)
+// console.log(users);
+// user.transferCredits(100,3)
+// console.log(users);
+// user.transferCredits(100,3)
+// console.log(users);
+// user.transferCredits(600,3)
+
+user.putCredits(500,1)
 console.log(users);
-user.transferCredits(100,3)
-console.log(users);
-user.transferCredits(100,3)
-console.log(users);
-user.transferCredits(600,3)
+user.putCredits(500,1)
