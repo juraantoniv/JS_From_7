@@ -77,7 +77,8 @@ class User {
             this.balance += money
             this.historyLogs.credits =money
             this.historyLogs.operationType = 'putCredits'
-            this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
+            // this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
+            this.historyLogs.operationTime = new Date().toUTCString()
             return this.balance
         }
 
@@ -87,7 +88,8 @@ class User {
         if (typeof money==="number" && id === this.key && this.balance > 0) {
             this.historyLogs.credits = money
             this.historyLogs.operationType = ' takeCredits'
-            this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
+            //this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
+            this.historyLogs.operationTime = new Date().toUTCString()
             this.balance -= money
             if (this.balance < 0) {
                 console.log('balance is negative.Please add some money to your balance')
@@ -100,7 +102,8 @@ class User {
     setTransactionLimit(amount, id) {
         if (typeof amount==="number" && id === this.key && amount!==0) {
             this.transactionLimit += amount
-            this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
+           // this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
+            this.historyLogs.operationTime = new Date().getTimezoneOffset()
             this.historyLogs.credits =amount
             this.historyLogs.operationType = 'setTransactionLimit'
             return this.transactionLimit
@@ -115,14 +118,16 @@ class User {
     transferCredits(amount,to_id) {
         if (typeof amount==="number" && this.balance>0 && amount<this.transactionLimit) {
             this.balance -= amount * 1.05
-            this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
+            //this.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
+            this.historyLogs.operationTime = new Date().toUTCString()
             this.historyLogs.credits =amount
             this.historyLogs.operationType = 'transferCredits'
             for (const amountElement of users) {
                 if (to_id === amountElement.key) {
                     amountElement.balance += amount
                     this.historyLogs.credits =amount
-                    amountElement.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
+                    //amountElement.historyLogs.operationTime =(`${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}|${new Date().getHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`)
+                    amountElement.historyLogs.operationTime = new Date().toUTCString()
                     amountElement.historyLogs.operationType = 'transferCredits'
                     amountElement.historyLogs.credits =amount
                     break
@@ -182,4 +187,8 @@ user.putCredits(150,1)
 user.transferCredits(150,3)
 // console.log(users);
 user2.transferCredits(100,1)
-console.log(users);
+// console.log(users);
+user.putCredits(150,1)
+//console.log(user);
+user.putCredits(150,1)
+console.log(user);
