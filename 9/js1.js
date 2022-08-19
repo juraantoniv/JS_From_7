@@ -1,3 +1,6 @@
+
+
+
 let simpsons = [
     {
         name: 'Bart',
@@ -44,12 +47,8 @@ for (const members of simpsons) {
     let div = document.createElement('div');
     div.classList.add('members');
 
-    // let productTitle = document.createElement('div');
-    // productTitle.innerText = members.name + ''+ members.surname+ '' + members.age + ''+members.info
-    // div.appendChild(productTitle);
-
     let productTitle = document.createElement('div');
-    productTitle.innerText = members.surname
+    productTitle.innerText = members.name
     div.appendChild(productTitle);
 
     let productTitle1 = document.createElement('div');
@@ -69,5 +68,5 @@ for (const members of simpsons) {
     div.appendChild(img);
 
 
-     member.appendChild(div);
+    member.appendChild(div);
 }
