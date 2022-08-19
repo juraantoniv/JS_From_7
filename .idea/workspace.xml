@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d10dd07-ceea-410e-a6e2-e76a3c3cb1a7" name="Changes" comment="ok">
-      <change afterPath="$PROJECT_DIR$/9/add/css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9/add/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9/add/js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8/add/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/8/add/js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9/add/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/9/add/js.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +52,14 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Node.js.js.js (2)">
+  <component name="RunManager" selected="Node.js.js.js (3)">
     <configuration name="js.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/8/js.js" working-dir="$PROJECT_DIR$/8">
       <method v="2" />
     </configuration>
     <configuration name="js.js (2)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/8/add/js.js" working-dir="$PROJECT_DIR$/8/add">
+      <method v="2" />
+    </configuration>
+    <configuration name="js.js (3)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/9/add/js.js" working-dir="$PROJECT_DIR$/9/add">
       <method v="2" />
     </configuration>
     <configuration name="js.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="js.js" working-dir="$PROJECT_DIR$/test">
@@ -67,6 +67,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.js.js (3)" />
         <item itemvalue="Node.js.js.js (2)" />
         <item itemvalue="Node.js.js.js (1)" />
       </list>
@@ -98,7 +99,7 @@
       <workItem from="1660847113013" duration="3718000" />
       <workItem from="1660897317466" duration="2154000" />
       <workItem from="1660910515638" duration="1000" />
-      <workItem from="1660924303216" duration="2120000" />
+      <workItem from="1660924303216" duration="6712000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1660672723587</created>
@@ -380,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660818648306</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="ok">
+      <created>1660926597426</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1660926597426</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

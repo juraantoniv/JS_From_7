@@ -1,17 +1,13 @@
 let emptyArrOFHTML =[]
 function recurs(htmlElement){
 console.log(htmlElement)
-    let children= htmlElement.children
+    emptyArrOFHTML.push(htmlElement)
+    let children= htmlElement.children.classList
     if(htmlElement.children.length!==0){
-        for (const htmlElementElement of children) {
-            emptyArrOFHTML.push(htmlElementElement)
+        for (const htmlElementElement of htmlElement.children) {
             recurs(htmlElementElement)
         }
     }
-
-
-
-
 }
 
 
