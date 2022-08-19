@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d10dd07-ceea-410e-a6e2-e76a3c3cb1a7" name="Changes" comment="ok">
+      <change afterPath="$PROJECT_DIR$/9/add/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9/add/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9/add/js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8/add/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/8/add/js.js" afterDir="false" />
     </list>
@@ -91,7 +94,11 @@
       <workItem from="1660757974047" duration="15232000" />
       <workItem from="1660776410203" duration="2220000" />
       <workItem from="1660779649491" duration="436000" />
-      <workItem from="1660801219795" duration="9266000" />
+      <workItem from="1660801219795" duration="10599000" />
+      <workItem from="1660847113013" duration="3718000" />
+      <workItem from="1660897317466" duration="2154000" />
+      <workItem from="1660910515638" duration="1000" />
+      <workItem from="1660924303216" duration="2120000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1660672723587</created>
@@ -359,7 +366,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660809886559</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="ok">
+      <created>1660818601192</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1660818601192</updated>
+    </task>
+    <task id="LOCAL-00040" summary="ok">
+      <created>1660818648306</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1660818648306</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,6 +412,11 @@
           <url>file://$PROJECT_DIR$/8/add/js.js</url>
           <line>39</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/8/add/js.js</url>
+          <line>225</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

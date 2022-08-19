@@ -1,0 +1,38 @@
+.one{
+    height: auto;
+    width: 1000px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: red;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+
+
+.rule1{
+    width: 200px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.text{
+    width: 1040px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: red;
+    border: 1px solid black;
+    border-radius: 10px;
+}
