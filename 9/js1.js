@@ -167,7 +167,8 @@ for (const coursesAArray of coursesArray) {
         member.appendChild(div);
 
 
-    const ul = document.createElement('ul')
+    const ul = document.createElement('div')
+    ul.classList.add('liii')
     for (const productTitleElement of coursesAArray.modules) {
         let li =document.createElement('li')
         li.innerText = productTitleElement

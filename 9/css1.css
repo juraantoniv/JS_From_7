@@ -5,5 +5,29 @@
 
 /*-----------------------------------*/
 
+.member{
 
+    background: blueviolet;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+}
+.members{
+    height: 100px;
+    width: 100%;
+    font-size: 20px;
 
+}
+
+.liii{
+
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
