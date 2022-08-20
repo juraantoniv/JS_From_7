@@ -77,7 +77,7 @@ let simpsons = [
 
 // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png
-
+//
 let coursesArray = [
     {
         title: 'JavaScript Complex',
@@ -158,29 +158,30 @@ for (const coursesAArray of coursesArray) {
 
         const div1 = document.createElement('h3')
         div1.classList.add('one')
-        let coursesAArray1 = document.createElement('div');
+        let coursesAArray1 = document.createElement('h3');
         coursesAArray1.innerText = coursesAArray.title
         div1.appendChild(coursesAArray1)
         member.append(coursesAArray1);
 
 
         let productTitle = document.createElement('div');
-        productTitle.innerText = coursesAArray.monthDuration
+        productTitle.innerText = `monthDuration - ${coursesAArray.monthDuration}`
         div.appendChild( productTitle)
         member.appendChild(div);
 
          let productTitle122 = document.createElement('div');
-         productTitle122.innerText = coursesAArray.hourDuration
+         productTitle122.innerText = `hourDuration - ${coursesAArray.hourDuration}H`
         div.appendChild( productTitle122)
          member.appendChild(div);
 
-
-    const ul = document.createElement('div')
+    const dv = document.createElement('div')
+    const ul = document.createElement('ul')
     ul.classList.add('liii')
     for (const productTitleElement of coursesAArray.modules) {
         let li =document.createElement('li')
         li.innerText = productTitleElement
         ul.appendChild(li)
+
     }
     member.appendChild(ul);
 }

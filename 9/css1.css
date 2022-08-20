@@ -7,33 +7,34 @@
 
 .member{
 
-    background: blueviolet;
-    width: 500px;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 15px;
-    gap: 20px;
+    padding: 10px;
+
 }
 .members{
-    height: 100px;
+    height: 50px;
     width: 100%;
     font-size: 20px;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
     flex-direction:row;
-    row-gap: 20px;
+    row-gap: 10px;
 
 
 }
 
 .liii{
-
+    border-top: 1px solid black;
+    text-decoration: none;
     width: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
     padding: 10px;
     font-size: 20px;
+    margin: 0px;
+    list-style-type: none;
 }
+
