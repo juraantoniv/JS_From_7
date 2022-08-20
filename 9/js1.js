@@ -155,16 +155,24 @@ for (const coursesAArray of coursesArray) {
         let div = document.createElement('div');
         div.classList.add('members');
 
+
+        const div1 = document.createElement('h3')
+        div1.classList.add('one')
         let coursesAArray1 = document.createElement('div');
         coursesAArray1.innerText = coursesAArray.title
-        div.appendChild(coursesAArray1)
-        member.append(div);
+        div1.appendChild(coursesAArray1)
+        member.append(coursesAArray1);
 
 
         let productTitle = document.createElement('div');
-        productTitle.innerText = coursesAArray.monthDuration + ' ' + coursesAArray.hourDuration
+        productTitle.innerText = coursesAArray.monthDuration
         div.appendChild( productTitle)
         member.appendChild(div);
+
+         let productTitle122 = document.createElement('div');
+         productTitle122.innerText = coursesAArray.hourDuration
+        div.appendChild( productTitle122)
+         member.appendChild(div);
 
 
     const ul = document.createElement('div')
