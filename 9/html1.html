@@ -9,38 +9,39 @@
 
 
 
-<!--<form name="f1">-->
+<form name="f1">
 
-<!--    <input type="number" name="a">-->
-<!--    <input type="number" name="n">-->
-<!--    <input type="text" name="text">-->
-<!--    <button>save</button>-->
+    <input type="number" name="a" placeholder="enter please number">
+    <input type="number" name="n" placeholder="enter please number">
+    <input type="text" name="text" placeholder="enter please some text">
+    <button>save</button>
 
-<!--</form>-->
+</form>
 
-<!--<script>-->
+<script>
 
-<!--    let users = []-->
+    let users = []
 
-<!--    let form1 = document.forms.f1;-->
+    let form1 = document.forms.f1;
 
-<!--    form1.onsubmit = function (e) {-->
-<!--        e.preventDefault();-->
-<!--        let a = this.a.value;-->
-<!--        let n = this.n.value;-->
-<!--        let text = this.text.value;-->
-<!--        for (let i = 0; i <= a; i++) {-->
-<!--            for (let j = 0; j <= n; j++) {-->
-<!--                users[i][j]=text-->
-<!--            }-->
-<!--        }-->
-<!--    }-->
+    form1.onsubmit = function (e) {
+        e.preventDefault();
+        let a = this.a.value;
+        let n = this.n.value;
+        let text = this.text.value;
+        for (let i = 0; i <= a; i++) {
+            for (let j = 0; j <= n; j++) {
+               users[i][j].unshift(text)
+            }
 
-<!--    console.log(users);-->
+        }
+    }
+
+    console.log(users);
 
 
 
-<!--</script>-->
+</script>
 
 
 <!--<div class="member">-->

@@ -362,8 +362,8 @@
 // - додати цей блок в body.
 // -
 
-
-
+//
+//
 //
 // let div = document.createElement('div');
 // div.className = "wrap" ;
@@ -371,7 +371,6 @@
 //
 // document.body.append(div);
 //
-// let copyBlock = div.cloneNode()
 //
+// div.append(div.cloneNode(true))
 //
-// document.body.append(copyBlock)
