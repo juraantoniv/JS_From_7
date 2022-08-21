@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d10dd07-ceea-410e-a6e2-e76a3c3cb1a7" name="Changes" comment="ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9/css1.css" beforeDir="false" afterPath="$PROJECT_DIR$/9/css1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/9/html1.html" beforeDir="false" afterPath="$PROJECT_DIR$/9/html1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/9/js1.js" beforeDir="false" afterPath="$PROJECT_DIR$/9/js1.js" afterDir="false" />
     </list>
@@ -115,14 +114,7 @@
       <workItem from="1661006794056" duration="662000" />
       <workItem from="1661014864256" duration="400000" />
       <workItem from="1661020489058" duration="4839000" />
-      <workItem from="1661073268591" duration="16961000" />
-    </task>
-    <task id="LOCAL-00003" summary="ok">
-      <created>1660674853573</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1660674853573</updated>
+      <workItem from="1661073268591" duration="21660000" />
     </task>
     <task id="LOCAL-00004" summary="ok">
       <created>1660679558348</created>
@@ -460,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661024062810</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="ok">
+      <created>1661098239689</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1661098239689</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +499,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/9/js1.js</url>
-          <line>291</line>
+          <line>281</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
