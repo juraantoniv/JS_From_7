@@ -78,113 +78,113 @@ let simpsons = [
 // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png
 //
-let coursesArray = [
-    {
-        title: 'JavaScript Complex',
-        monthDuration: 5,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
-    },
-    {
-        title: 'Java Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'java core',
-            'java advanced']
-    },
-    {
-        title: 'Python Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'python core',
-            'python advanced']
-    },
-    {
-        title: 'QA Complex',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
-    },
-    {
-        title: 'FullStack',
-        monthDuration: 7,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'react',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'node.js',
-            'python',
-            'java']
-    },
-    {
-        title: 'Frontend',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
-    }
-];
-
-
-let member = document.getElementsByClassName('member')[0];
-
-for (const coursesAArray of coursesArray) {
-        let div = document.createElement('div');
-        div.classList.add('members');
-
-
-        let div1 = document.createElement('h3')
-        div1.classList.add('one')
-        let coursesAArray1 = document.createElement('h3');
-        coursesAArray1.innerText = coursesAArray.title
-        div1.appendChild(coursesAArray1)
-        member.append(div1);
-
-
-        let productTitle = document.createElement('div');
-        productTitle.innerText = `monthDuration - ${coursesAArray.monthDuration}`
-        div.appendChild( productTitle)
-        member.appendChild(div);
-
-         let productTitle122 = document.createElement('div');
-         productTitle122.innerText = `hourDuration - ${coursesAArray.hourDuration}H`
-        div.appendChild( productTitle122)
-         member.appendChild(div);
-
-
-    const ul = document.createElement('ul')
-    ul.classList.add('liii')
-    for (const productTitleElement of coursesAArray.modules) {
-        let li =document.createElement('li')
-        li.innerText = productTitleElement
-        ul.appendChild(li)
-
-    }
-    member.appendChild(ul);
-}
+// let coursesArray = [
+//     {
+//         title: 'JavaScript Complex',
+//         monthDuration: 5,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+//     },
+//     {
+//         title: 'Java Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'java core',
+//             'java advanced']
+//     },
+//     {
+//         title: 'Python Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'python core',
+//             'python advanced']
+//     },
+//     {
+//         title: 'QA Complex',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+//     },
+//     {
+//         title: 'FullStack',
+//         monthDuration: 7,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'react',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'node.js',
+//             'python',
+//             'java']
+//     },
+//     {
+//         title: 'Frontend',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+//     }
+// ];
+//
+//
+// let member = document.getElementsByClassName('member')[0];
+//
+// for (const coursesAArray of coursesArray) {
+//         let div = document.createElement('div');
+//         div.classList.add('members');
+//
+//
+//         let div1 = document.createElement('h3')
+//         div1.classList.add('one')
+//         let coursesAArray1 = document.createElement('h3');
+//         coursesAArray1.innerText = coursesAArray.title
+//         div1.appendChild(coursesAArray1)
+//         member.append(div1);
+//
+//
+//         let productTitle = document.createElement('div');
+//         productTitle.innerText = `monthDuration - ${coursesAArray.monthDuration}`
+//         div.appendChild( productTitle)
+//         member.appendChild(div);
+//
+//          let productTitle122 = document.createElement('div');
+//          productTitle122.innerText = `hourDuration - ${coursesAArray.hourDuration}H`
+//         div.appendChild( productTitle122)
+//          member.appendChild(div);
+//
+//
+//     const ul = document.createElement('ul')
+//     ul.classList.add('liii')
+//     for (const productTitleElement of coursesAArray.modules) {
+//         let li =document.createElement('li')
+//         li.innerText = productTitleElement
+//         ul.appendChild(li)
+//
+//     }
+//     member.appendChild(ul);
+// }
 
 
 
@@ -276,9 +276,90 @@ for (const coursesAArray of coursesArray) {
 //
 //     let coursesAArray2 = document.createElement('p');
 //     coursesAArray2.innerText = coursesAArrayS.monthDuration
-//     coursesAArray2.classList.add('description')
+//     coursesAArray2.classList.add('description)
 //     div.appendChild(coursesAArray2);
 //
-//     member.appendChild(div);
+//     member.appendChild(div)
 //
 // }
+
+//-------------------------------------
+
+
+// - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку
+// зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
+
+// let form1 = document.forms.f1;
+//
+// form1.onsubmit = function (e) {
+//     e.preventDefault();
+//     let a = this.a.value;
+//     if(a<18){
+//         console.log('Your age is less than 18')
+//     }
+//     else {
+//         console.log('Your age is ok')
+//     }
+// }
+
+// *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+//     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+//
+
+
+// let users = []
+// let form1 = document.forms.f2;
+//
+// form1.onsubmit = function (e) {
+//     e.preventDefault();
+//     let name = this.name.value;
+//     let age = this.age.value;
+//     let user = {name,age}
+//     users.push(user);
+//     console.log(users);
+//
+// };
+
+
+//----------------------------------------------
+
+// - Є масив:
+//     ['Main','Products','About us','Contacts']
+// Взяти файл template1.html та додати в нього скріпт котрий для кожного елементу масиву створює li та додає його до блоку .menu
+// Завдання робити через цикли.
+
+//
+// <!doctype html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport"
+// content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+//     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+//     <title>Title</title>
+// </head>
+// <body>
+// <ul class="menu"></ul>
+//
+//
+// <script src="js1.js"></script>
+//
+// </body>
+// </html>
+//
+//
+// let  arr = ['Main','Products','About us','Contacts']
+//
+// let member = document.getElementsByClassName('menu')[0];
+//
+//
+// for (const memberElement of arr) {
+//     let div = document.createElement('div');
+//     div.classList.add('courses')
+//
+//     let member1 = document.createElement('li');
+//     member1.innerText = memberElement
+//     member.appendChild(member1)
+// }
+//
+//
