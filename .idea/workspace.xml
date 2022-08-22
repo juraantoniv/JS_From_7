@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d10dd07-ceea-410e-a6e2-e76a3c3cb1a7" name="Changes" comment="ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9/html1.html" beforeDir="false" afterPath="$PROJECT_DIR$/9/html1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/9/js1.js" beforeDir="false" afterPath="$PROJECT_DIR$/9/js1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,14 +113,8 @@
       <workItem from="1661006794056" duration="662000" />
       <workItem from="1661014864256" duration="400000" />
       <workItem from="1661020489058" duration="4839000" />
-      <workItem from="1661073268591" duration="25750000" />
-    </task>
-    <task id="LOCAL-00005" summary="ok">
-      <created>1660680068377</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1660680068377</updated>
+      <workItem from="1661073268591" duration="27421000" />
+      <workItem from="1661152343913" duration="4528000" />
     </task>
     <task id="LOCAL-00006" summary="ok">
       <created>1660682339267</created>
@@ -459,11 +452,29 @@
       <option name="project" value="LOCAL" />
       <updated>1661104539486</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="ok">
+      <created>1661111760147</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1661111760147</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -500,7 +511,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/9/js1.js</url>
           <line>281</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

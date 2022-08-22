@@ -369,8 +369,10 @@
 // div.className = "wrap" ;
 // div.innerHTML = "<strong>Octen</strong> .";
 //
-// document.body.append(div);
+// let clone = div.cloneNode(true)
 //
 //
-// div.append(div.cloneNode(true))
+// div.append(cloneNode)
 //
+
+
