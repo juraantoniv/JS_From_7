@@ -1,4 +1,5 @@
 let box = document.createElement('div')
+box.classList.add('box_all')
 
 fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
@@ -17,3 +18,4 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
     });
 
+document.body.appendChild(box)
