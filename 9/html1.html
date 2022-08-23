@@ -8,46 +8,79 @@
 <body>
 
 
+<!--&lt;!&ndash;<form name="f1">&ndash;&gt;-->
 
-<!--<form name="f1">-->
+<!--&lt;!&ndash;     <input type="number" id="valueA" name="a" placeholder="enter please number">&ndash;&gt;-->
+<!--&lt;!&ndash;    <input type="number" id="valueB" placeholder="enter please number">&ndash;&gt;-->
+<!--&lt;!&ndash;    <input type="text" id="text" placeholder="enter please some text">&ndash;&gt;-->
+<!--&lt;!&ndash;    <button>save</button>&ndash;&gt;-->
 
-<!--    <input type="number" name="a" placeholder="enter please number">-->
-<!--    <input type="number" name="n" placeholder="enter please number">-->
-<!--    <input type="text" name="text" placeholder="enter please some text">-->
-<!--    <button>save</button>-->
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
 
-<!--</form>-->
+<!--&lt;!&ndash;<div class="menu"></div>&ndash;&gt;-->
 
-<!--<script>-->
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;    let form1 = document.forms.f1;&ndash;&gt;-->
+<!--&lt;!&ndash;    let div = document.getElementsByClassName('menu')[0]&ndash;&gt;-->
 
-<!--    let users = []-->
-
-<!--    let form1 = document.forms.f1;-->
-
-<!--    form1.onsubmit = function (e) {-->
-<!--        e.preventDefault();-->
-<!--        let a = this.a.value;-->
-<!--        let n = this.n.value;-->
-<!--        let text = this.text.value;-->
-<!--        for (let i = 0; i <= a; i++) {-->
-<!--            for (let j = 0; j <= n; j++) {-->
-<!--               users[i][j].unshift(text)-->
-<!--            }-->
-
-<!--        }-->
-<!--    }-->
-
-<!--    console.log(users);-->
+<!--&lt;!&ndash;      let a = document.getElementById('valueA')[0].value&ndash;&gt;-->
+<!--&lt;!&ndash;      let  b= document.getElementById('valueB')[0].value&ndash;&gt;-->
+<!--&lt;!&ndash;      let text = document.getElementById('text')[0].value&ndash;&gt;-->
 
 
+
+
+
+<!--&lt;!&ndash;    for (let i = 0; i < a; i++){&ndash;&gt;-->
+<!--&lt;!&ndash;         let div1 = document.createElement('div')&ndash;&gt;-->
+<!--&lt;!&ndash;            div1.classList.add('div')&ndash;&gt;-->
+<!--&lt;!&ndash;            div1.innerText = text&ndash;&gt;-->
+<!--&lt;!&ndash;        for (let j = 0; j < b; j++) {&ndash;&gt;-->
+<!--&lt;!&ndash;            // let div1 = document.createElement('div')&ndash;&gt;-->
+<!--&lt;!&ndash;            // div1.classList.add('div')&ndash;&gt;-->
+<!--&lt;!&ndash;            // div1.innerText = text&ndash;&gt;-->
+<!--&lt;!&ndash;            // div.appendChild(div1)&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        div.appendChild(div1)&ndash;&gt;-->
+
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+
+
+
+
+
+<!--&lt;!&ndash;&lt;!&ndash;    console.log(users);&ndash;&gt;&ndash;&gt;-->
+
+<script>
+  let one =  document.createElement('div')
+  one.classList.add('grgr')
+  document.body.appendChild(one)
+
+
+    fetch('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Radom?unitGroup=metric&key=YOUR_API_KEY&contentType=json')
+        .then((response)=>{
+            response.json()
+        })
+        .then(whether=>{
+            let arr = JSON.stringify(whether)
+            console.log(arr)})
 
 </script>
 
 
-<!--<div class="member">-->
 
-<!--</div>-->
-  <script src="js1.js"></script>
+<script src="js1.js"></script>
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

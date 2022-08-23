@@ -370,9 +370,11 @@
 // div.innerHTML = "<strong>Octen</strong> .";
 //
 // let clone = div.cloneNode(true)
+
 //
 //
 // div.append(cloneNode)
-//
+
+
 
 

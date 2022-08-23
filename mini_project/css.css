@@ -1,0 +1,14 @@
+.user_all{
+    width: 350px;
+    border: 1px solid black;
+
+}
+
+.box{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
