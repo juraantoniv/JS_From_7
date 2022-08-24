@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d10dd07-ceea-410e-a6e2-e76a3c3cb1a7" name="Changes" comment="ok">
-      <change afterPath="$PROJECT_DIR$/mini_project/post-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_project/user-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mini_project/post-details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mini_project/user-details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini_project/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini_project/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/post-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_project/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini_project/user-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +21,8 @@
       <list>
         <option value="package.json" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -123,14 +122,7 @@
       <workItem from="1661172469761" duration="10174000" />
       <workItem from="1661199216424" duration="2951000" />
       <workItem from="1661202718258" duration="1000" />
-      <workItem from="1661255437481" duration="29041000" />
-    </task>
-    <task id="LOCAL-00009" summary="ok">
-      <created>1660685861504</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1660685861504</updated>
+      <workItem from="1661255437481" duration="38503000" />
     </task>
     <task id="LOCAL-00010" summary="ok">
       <created>1660745479060</created>
@@ -468,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661279169675</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="ok">
+      <created>1661328044638</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1661328044639</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
