@@ -1,15 +1,17 @@
 
 let url = new URL(location.href);
+console.log(url)
 let id = url.searchParams.get('id');
+console.log(id)
 
 
 fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then(rens => rens.json())
     .then(value => {
 
-            let name = document.createElement('div')
-            name.innerText = `${value.id} ${value.name} ${value.username}`
-            document.body.appendChild(name)
+            let name12 = document.createElement('div')
+            name12.innerText = `${value.id} ${value.name} ${value.username}`
+            document.body.appendChild(name12)
 
 
             let tel = document.createElement('h5')
@@ -32,7 +34,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
             button.onclick = function () {
 
                 window.localStorage.setItem('post', JSON.stringify(value))
-                location.href = `post-details.html?id=${value.id}`
+                location.href = `post.html?id=${value.id}`
             }
 
         }
