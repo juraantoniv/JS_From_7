@@ -1,7 +1,5 @@
 
 
-
-
 .user_all{
     width: 250px;
     border: 1px solid black;
@@ -10,6 +8,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 10px;
 
 }
 
@@ -19,7 +18,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid black;
 
 }
