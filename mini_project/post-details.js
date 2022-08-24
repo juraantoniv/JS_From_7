@@ -33,17 +33,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
             htmlDivElement.appendChild(name_id3)
 
 
-
-
-
-
-
-            // button.onclick = function () {
-            //
-            //     window.localStorage.setItem('post', JSON.stringify(value))
-            //     location.href = `post.html?id=${value.id}`
-            // }
-        }
+            }
         }
 
 
