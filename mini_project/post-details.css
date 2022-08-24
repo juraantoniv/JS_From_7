@@ -1,0 +1,20 @@
+.com1{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background: red;
+
+}
+
+
+/*.small{*/
+
+/*    width: 100%;*/
+/*    border: 1px solid black;*/
+/*    border-radius: 10px;*/
+/*    margin: 15px;*/
+
+/*}*/
