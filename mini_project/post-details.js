@@ -1,16 +1,21 @@
 
 let url = new URL(location.href);
-let userId = url.searchParams.get('userId');
+console.log(url)
+let id = url.searchParams.get('id');
+console.log(id)
 
 
-fetch(`https://jsonplaceholder.typicode.com/posts/${userId}`)
+fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
     .then(rens => rens.json())
-    .then(value => {
+    .then(value => {  console.log(value)
 
-            let post = document.createElement('h3')
-            post.innerText =`${value.title}`
-            document.body.appendChild(post)
+            let htmluListElement = document.createElement('ul');
+            document.body.appendChild(htmluListElement)
+        for (const valueElement of value) {
+            let post = document.createElement('li')
+            post.innerText =`${valueElement.title}`
+            htmluListElement.appendChild(post)
 
 
-
+        }
     })
