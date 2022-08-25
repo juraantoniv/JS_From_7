@@ -9,26 +9,29 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
     .then(rens => rens.json())
     .then(value => {  console.log(value)
 
-            let htmluListElement = document.createElement('ul');
+            let htmluListElement = document.createElement('div');
+        htmluListElement.classList.add('ones')
             document.body.appendChild(htmluListElement)
         for (const valueElement of value) {
+            let one = document.createElement('div')
+            one.classList.add('ones1')
+            htmluListElement.appendChild(one)
 
 
+            // let post1 = document.createElement('div')
+            // post1.innerText =`${valueElement.id}`
+            // one.appendChild(post1)
 
-            let post1 = document.createElement('li')
-            post1.innerText =`${valueElement.id}`
-            htmluListElement.appendChild(post1)
 
-
-            let post = document.createElement('li')
+            let post = document.createElement('div')
             post.innerText =`${valueElement.title}`
-            htmluListElement.appendChild(post)
+            one.appendChild(post)
 
 
 
             let  but1 = document.createElement('button')
-            but1.innerText = 'Post-details'
-            htmluListElement.appendChild(but1)
+            but1.innerText = 'Post details'
+            one.appendChild(but1)
 
             but1.onclick = function () {
 
