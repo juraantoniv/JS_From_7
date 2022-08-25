@@ -14,11 +14,11 @@
     width: 200px;
     display: flex;
     border:1px solid black;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     border-radius: 5px;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
 
 
 }
@@ -49,6 +49,10 @@ button{
 }
 
 .but{
-
+    height: 70px;
+    width: 60px;
     border: 1px solid black;
+    margin-left: 10px;
+
+
 }
