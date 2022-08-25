@@ -30,6 +30,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
 
 
             let  but1 = document.createElement('button')
+            but1.classList.add('but')
             but1.innerText = 'Post details'
             one.appendChild(but1)
 

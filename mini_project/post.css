@@ -40,3 +40,15 @@ button{
     border-radius: 6px;
     cursor: pointer;
 }
+
+.but:hover {
+    transform: scale(1.5);
+    background: cadetblue;
+    z-index: 1;
+    transition: transform .5s;
+}
+
+.but{
+
+    border: 1px solid black;
+}
