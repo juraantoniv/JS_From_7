@@ -23,28 +23,30 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
         for (const info of postDet) {
 
 
-
+            let  div =   document.createElement("div")
+            div.classList.add('div')
+            htmlDivElement.appendChild(div)
 
             let name_id = document.createElement('div')
-            name_id.innerText = `'Post ID' ${info.postId}  'ID:' ${info.id}`
+            name_id.innerText = `Post ID ${info.postId} | ID: ${info.id}`
             name_id.classList.add('small')
-            htmlDivElement.appendChild(name_id)
+            div.appendChild(name_id)
 
 
             let name_id1 = document.createElement('div')
             name_id1.innerText = `${info.name}`
             name_id1.classList.add('small')
-            htmlDivElement.appendChild(name_id1)
+            div.appendChild(name_id1)
 
             let name_id2 = document.createElement('div')
             name_id2.innerText = `${info.email}`
             name_id2.classList.add('small')
-            htmlDivElement.appendChild(name_id2)
+            div.appendChild(name_id2)
 
-            let name_id3 = document.createElement('p')
+            let name_id3 = document.createElement('div')
             name_id3.innerText = `${info.body}`
-            name_id3.classList.add('small')
-            htmlDivElement.appendChild(name_id3)
+            name_id3.classList.add('small1')
+            div.appendChild(name_id3)
 
 
             }
