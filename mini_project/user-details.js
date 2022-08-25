@@ -4,6 +4,10 @@ console.log(url)
 let id = url.searchParams.get('id');
 console.log(id)
 
+let allTh = document.createElement('div')
+allTh.classList.add('allTh')
+document.body.appendChild(allTh)
+
 
 fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then(rens => rens.json())
@@ -11,37 +15,41 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
             let name12 = document.createElement('div')
             name12.innerText = `${value.id} ${value.name} ${value.username}`
-            document.body.appendChild(name12)
+            allTh.appendChild(name12)
 
 
             let tel = document.createElement('h5')
             tel.innerText = `tel. ${value.phone}`
-            document.body.appendChild(tel)
+             allTh.appendChild(tel)
 
             let web = document.createElement('h4')
             web.innerText = ` ${value.website}`
-            document.body.appendChild(web)
+            allTh.appendChild(web)
 
 
             let email = document.createElement('div')
             email.innerText = `${value.email}`
-            document.body.appendChild(email)
+            allTh.appendChild(email)
+
+             let adrBox = document.createElement('div')
+            adrBox.classList.add('adrBox')
+             allTh.appendChild(adrBox)
 
             let adr2 = document.createElement('div')
-            adr2.innerText = `City: ${value.address.city} | Zipcode:${value.address.zipcode}`
-             document.body.appendChild(adr2)
+            adr2.innerText = `City: ${value.address.city}  Zipcode:${value.address.zipcode}`
+             adrBox.appendChild(adr2)
 
             let adr = document.createElement('div')
             adr.innerText = `Suite: ${value.address.suite}`
-            document.body.appendChild(adr)
+            adrBox.appendChild(adr)
 
              let adr1 = document.createElement('div')
             adr1.innerText = `Street: ${value.address.street}`
-            document.body.appendChild(adr1)
+            adrBox.appendChild(adr1)
 
             let button = document.createElement('button')
-            button.innerText = 'User Details'
-            document.body.appendChild(button)
+            button.innerText = 'Post Details'
+            allTh.appendChild(button)
 
 
 
