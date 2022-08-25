@@ -19,19 +19,21 @@ fetch('https://jsonplaceholder.typicode.com/users/')
             div.appendChild(tel)
 
             let web = document.createElement('h4')
-            web.innerText=` ${user.website}`
+            web.classList.add('web')
+            web.innerHTML=` ${user.website}`
             div.appendChild(web)
 
 
 
             let email = document.createElement('div')
             email.innerText = `${user.email}`
+            email.classList.add('aaa')
             div.appendChild(email)
-                box.appendChild(div)
+            box.appendChild(div)
 
             let url = document.createElement('a')
             url.href =`user-details.html?id=${user.id}`
-            url.innerText= 'Ifo of user'
+            url.innerText= 'Info of User'
             div.appendChild(url)
         }
     });
