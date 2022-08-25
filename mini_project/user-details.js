@@ -53,7 +53,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
             let button = document.createElement('button')
             button.classList.add('btn')
-            button.innerText = 'Post Details'
+            button.innerText = 'Post of User'
             allTh.appendChild(button)
 
 

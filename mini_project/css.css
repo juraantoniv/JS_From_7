@@ -52,7 +52,6 @@ body{
 }
 
 .user_all:hover {
-    /*background-color: #FFCCCC;*/
     width: 250px;
     height: 200px;
     -webkit-transform: rotate(360deg);
