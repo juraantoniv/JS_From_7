@@ -20,7 +20,7 @@ body{
 }
 
 .box_all{
-    width: 750px;
+    width: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
