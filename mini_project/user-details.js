@@ -14,8 +14,12 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then(value => { console.log(value)
 
             let name12 = document.createElement('div')
-            name12.innerText = `${value.id}| ${value.name} ---------------------------  ${value.username}"`
+            name12.innerText = `${value.id}| ${value.name} `
             allTh.appendChild(name12)
+
+            let name123 = document.createElement('div')
+            name123.innerText =  `User Name: ${value.username}`
+            allTh.appendChild(name123)
 
 
             let tel = document.createElement('h5')
