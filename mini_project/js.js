@@ -35,11 +35,19 @@ fetch('https://jsonplaceholder.typicode.com/users/')
             div.appendChild(email)
             box.appendChild(div)
 
-            let url = document.createElement('a')
+            let url = document.createElement('button')
             url.classList.add('button1')
             url.href =`user-details.html?id=${user.id}`
             url.innerText= 'Info of User'
             div.appendChild(url)
+
+
+            url.onclick = function () {
+
+                window.localStorage.setItem('post', JSON.stringify(users))
+                location.href = `user-details.html?id=${user.id}`
+            }
+
         }
     });
 

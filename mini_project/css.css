@@ -50,6 +50,7 @@ body{
     border-radius: 4px;
     padding: 5px;
     color: black;
+    cursor: pointer;
 }
 
 .button1:hover {
