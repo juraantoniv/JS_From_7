@@ -42,3 +42,14 @@ button{
 
 }
 
+.btn{
+    height: 40px;
+}
+
+.btn:hover {
+    transform: scale(1.7);
+    background: silver;
+    z-index: 1;
+    transition: transform .7s;
+}
+

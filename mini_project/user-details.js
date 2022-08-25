@@ -52,6 +52,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
             adrBox.appendChild(adr1)
 
             let button = document.createElement('button')
+            button.classList.add('btn')
             button.innerText = 'Post Details'
             allTh.appendChild(button)
 

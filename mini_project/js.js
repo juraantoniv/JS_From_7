@@ -36,6 +36,7 @@ fetch('https://jsonplaceholder.typicode.com/users/')
             box.appendChild(div)
 
             let url = document.createElement('a')
+            url.classList.add('button1')
             url.href =`user-details.html?id=${user.id}`
             url.innerText= 'Info of User'
             div.appendChild(url)
