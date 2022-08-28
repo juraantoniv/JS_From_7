@@ -36,7 +36,6 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
 
             but1.onclick = function () {
 
-                window.localStorage.setItem('post', JSON.stringify(value))
                 location.href = `post-details.html?id=${valueElement.id}`
             }
 

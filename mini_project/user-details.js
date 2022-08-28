@@ -1,8 +1,7 @@
 
 let url = new URL(location.href);
-console.log(url)
 let id = url.searchParams.get('id');
-console.log(id)
+
 
 let allTh = document.createElement('div')
 allTh.classList.add('allTh')
@@ -60,7 +59,6 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
             button.onclick = function () {
 
-                window.localStorage.setItem('post', JSON.stringify(value))
                 location.href = `post.html?id=${value.id}`
             }
 
