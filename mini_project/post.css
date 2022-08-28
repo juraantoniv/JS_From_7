@@ -1,5 +1,5 @@
 .ones{
-    width: 550px;
+    width: 1250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,6 +7,7 @@
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px;
+    margin-top: 100px;
 }
 
 .ones1{
@@ -24,7 +25,7 @@
 }
 
 .ones1:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     background: white;
     z-index: 1;
     transition: transform .5s;
