@@ -5,7 +5,6 @@ fetch('https://jsonplaceholder.typicode.com/users/')
     .then((response) => response.json())
     .then(users => {
         for (const user of users) {
-            // localStorage.setItem('id',JSON.stringify(users))
             let div = document.createElement('div');
             div.classList.add('user_all')
 
