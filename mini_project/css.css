@@ -76,40 +76,40 @@ body{
 }
 
 .button1:hover {
-    transform: scale(1.7);
+    transform: scale(1.4);
     background: silver;
     z-index: 1;
     transition: transform .7s;
 }
 
 .web:hover {
-    transform: scale(1.7);
+    transform: scale(1.4);
     z-index: 1;
     transition: transform .7s;
     cursor: pointer;
 }
 
 .aaa:hover {
-    transform: scale(1.7);
+    transform: scale(1.4);
     z-index: 1;
     transition: transform .7s;
 }
 
 
 .nam:hover {
-    transform: scale(1.9);
+    transform: scale(1.4);
     z-index: 1;
     transition: transform .7s;
 }
 
 .tel:hover {
-    transform: scale(1.9);
+    transform: scale(1.4);
     z-index: 1;
     transition: transform .7s;
 }
 
 .nan1:hover {
-    transform: scale(1.9);
+    transform: scale(1.4);
     z-index: 1;
     transition: transform .7s;
 }
