@@ -9,15 +9,18 @@ fetch('https://jsonplaceholder.typicode.com/users/')
             div.classList.add('user_all')
 
             let name =document.createElement('div')
+            name.classList.add('nan1')
             name.innerText = `${user.id} | ${user.name} `
             div.appendChild(name)
 
 
             let name1 =document.createElement('div')
             name1.innerText = ` User name: ${user.username}`
+            name1.classList.add('nam')
             div.appendChild(name1)
 
             let tel = document.createElement('h5')
+            tel.classList.add('tel')
             tel.innerText=`tel. ${user.phone}`
             div.appendChild(tel)
 
